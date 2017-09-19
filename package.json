@@ -1,0 +1,19 @@
+{
+  "name": "react-incrementing-button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab01.valuecentric.com/dylan.hall/react-incrementing-button.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^3.6.0"
+  }
+}
