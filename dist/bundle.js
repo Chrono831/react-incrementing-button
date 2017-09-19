@@ -74,7 +74,7 @@ module.exports = __webpack_require__(1);
 /* 1 */
 /***/ (function(module, exports) {
 
-console.log('running a script');
+console.log('running a script!');
 
 
 /***/ })
