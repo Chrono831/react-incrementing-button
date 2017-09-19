@@ -1,3 +1,17 @@
+const BABEL_OPTIONS = {
+    presets: [
+        'react',
+        [
+            'env', {
+                browsers: "last 2 versions",
+                modules: false,
+                useBuiltins: true,
+                debug: true,
+            }
+        ],
+    ]
+};
+
 module.exports = {
     entry: ['./src/index.js'],
     output: {
@@ -5,6 +19,15 @@ module.exports = {
         filename: './dist/bundle.js',
     },
     module: {
-        rules: [],
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: BABEL_OPTIONS,
+                },
+            },
+        ],
     },
 }
