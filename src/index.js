@@ -6,8 +6,9 @@ for (const n of [1, 2, 5]) {
 
 import React from 'react';
 import ReactDom from 'react-dom';
+import App from './app';
 
 ReactDom.render(
-    <span>Reacting!</span>,
+    <App/>,
     document.querySelector('main')
 );
