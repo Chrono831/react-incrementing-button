@@ -9,7 +9,8 @@ const BABEL_OPTIONS = {
                 debug: true,
             }
         ],
-    ]
+    ],
+    plugins: ["transform-class-properties"],
 };
 
 module.exports = {
